@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Hero | Modern Converter</title>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Let's <span>PDF</span></h1>
+        <p>Fast, secure, and simple file conversions</p>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                image
+                </span>
+            </div>
+            <h2>Image to PDF</h2>
+            <input type="file" id="imgFiles" multiple accept="image/*">
+            <button onclick="imageToPdf()">Convert Images</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h2>PDF to Text</h2>
+            <input type="file" id="pdfFile" accept="application/pdf">
+            <button onclick="pdfToText()">Extract Text</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">✍️</div>
+            <h2>Text to PDF</h2>
+            <input type="file" id="txtFile" accept=".txt">
+            <button onclick="txtToPdf()">Create PDF</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">📘</div>
+            <h2>Word to PDF</h2>
+            <input type="file" id="docxFile" accept=".docx">
+            <!-- <button onclick="docxToPdf()">Convert Docx</button> -->
+            <button onclick="">Under Construction</button>
+        </div>
+
+        <div class="card accent">
+            <div class="icon">🗜️</div>
+            <h2>Compress PDF</h2>
+            <input type="file" id="compressFile" accept="application/pdf">
+            <button onclick="compressPdf()">Reduce Size</button>
+        </div>
+
+        <div class="card accent">
+            <div class="icon">
+                <span class="material-symbols-outlined">merge_type</span>
+            </div>
+            <h2>Merge PDF</h2>
+            <input type="file" id="mergeFiles" accept="application/pdf" multiple>
+            <button onclick="mergePdf()">Merge PDFs</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p id="status"></p>
+    </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
