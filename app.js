@@ -1,4 +1,4 @@
-const API = "https://pdf-amarkumar.onrender.com";
+const API = "https://pdf-amarkumar.onrender.com/api";
 // const API = "http://localhost:8081/api";
 
 function downloadFile(blob, filename) {
